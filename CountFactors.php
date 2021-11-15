@@ -1,3 +1,4 @@
+<?php
 /*
 
 
@@ -40,3 +41,4 @@ function solution($N) {
      }
    return $count;  
 }
+?>
