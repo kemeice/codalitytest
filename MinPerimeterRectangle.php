@@ -1,3 +1,4 @@
+<?php
 /***
 
 
@@ -51,3 +52,4 @@ function solution($N) {
       }
       return $min;
 }
+?>
