@@ -67,6 +67,7 @@ O -> Q
 u -> w
 t -> v
 z -> b
+note // 6/12 test cases failed :(
 */
 function caesarCipher($s, $k) {
     // Write your code here
