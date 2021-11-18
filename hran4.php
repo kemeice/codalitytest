@@ -70,7 +70,7 @@ z -> b
 */
 function caesarCipher($s, $k) {
     // Write your code here
-var_dump($s);
+//var_dump($s);
 $res = "";
  for($i=0; $i< strlen($s) ; $i++) {
      if(!ctype_alnum($s[$i])) {
