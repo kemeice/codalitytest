@@ -65,7 +65,7 @@ function calPoints($ops) {
                 elseif($ops[$i] == "D") {
                     $arr[]= ($arr[count($arr)-1]*2);
                    
-                    echo $ops[$i];
+                    
                 }
                 elseif($ops[$i] == 'C') {
                     array_pop($arr);
