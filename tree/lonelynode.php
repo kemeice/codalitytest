@@ -38,3 +38,46 @@ Constraints:
     The number of nodes in the tree is in the range [1, 1000].
     Each node’s value is between [1, 10^6].
 /*    
+
+/**
+ * Definition for a binary tree node.
+ * class TreeNode {
+ *     public $val = null;
+ *     public $left = null;
+ *     public $right = null;
+ *     function __construct($val = 0, $left = null, $right = null) {
+ *         $this->val = $val;
+ *         $this->left = $left;
+ *         $this->right = $right;
+ *     }
+ * }
+ */
+class Solution {
+
+    /**
+     * @param TreeNode $root
+     * @return Integer
+     */
+   public $arr = [];
+    function maxDepth($root) {
+      
+       if($root->left !== null && $root->right !==null) {
+           $this->maxDepth($root->left);
+           $this->maxDepth($root->right);
+       }
+           
+       elseif($root->right != null)
+       {
+           $this->arr[]=$root->right->val;
+           $this->maxDepth($root->right);
+       }
+        elseif($root->left != null)
+        {
+           $this->arr[]=$root->left->val;
+           $this->maxDepth($root->left); 
+        }
+        
+      
+        return($this->arr);
+       
+}
